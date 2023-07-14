@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashionBazzar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo.png">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <div class="left">
+                <h1>fashion <span>Bazzar</span></h1>
+                <h2>Shopping Online,Buy 1 get 1 Free</h2>
+                <p>Grab Your Favourite Styles Ranging from Clothing
+                </p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="right">
+               <div class="art"></div>
+                <img src="men.jpg">
+            </div>
+        </div>
+        <div class="category">
+            <div class="men">
+                <div class="art1"></div>
+                <img src="men.jpg" onclick="setimg('men.jpg)">
+                <p>Men's</p>
+            </div>
+            <div class="women">
+                <div class="art1"></div>
+                <img src="women.png" onclick="setimg('women.png')">
+                <p>Women's</p>
+            </div>
+            <div class="kid">
+                <div class="art1"></div>
+                <img src="kids.png" onclick="setimg('kids.png')">
+                <p>Kid's</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setimg(path)
+        {
+            document.querySelector('#imgid').src=path;
+        }
+    </script>
+</body>
+</html>
